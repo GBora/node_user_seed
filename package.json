@@ -1,14 +1,14 @@
 {
-  "name": "node_user_ystem",
-  "version": "0.0.1",
-  "description": "",
+  "name": "node_user_management",
+  "version": "1.0.0",
+  "description": "A quickstart seed for node user management",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
   "keywords": [],
-  "author": "George Bora <gbora@pitechnologies.ro> (https://social.pitechplus.com/employee/bora_paul-george)",
+  "author": "George Bora <gpbora@gmail.com> (https://github.com/GBora)",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.17.1",
