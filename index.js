@@ -2,6 +2,8 @@ let express = require('express');
 
 let userRoutes = require('./routes/user.routes.js');
 
+let port = process.env.PORT || 3000;
+
 let app = express();
 
 app.get('/', function (req, res) {
@@ -10,6 +12,6 @@ app.get('/', function (req, res) {
 
 app.use('/users', userRoutes);
 
-app.listen(3000, function() {
-    console.log('server started');
+app.listen(port, function() {
+    console.log('Server started at http://localhost:' + port);
 })
