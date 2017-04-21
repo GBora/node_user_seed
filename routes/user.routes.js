@@ -11,5 +11,7 @@ let userAPI = require('../api/user.api.js');
 
 router.post('/login', urlencodedParser, userAPI.login);
 router.post('/new', urlencodedParser, userAPI.addNew);
+router.delete('/delete', urlencodedParser, userAPI.deleteUser);
+router.put('/update', urlencodedParser, userAPI.updateUser);
 
 module.exports = router;

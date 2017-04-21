@@ -7,4 +7,6 @@ let knex = require('knex')({
 
 let bookshelf = require('bookshelf')(knex);
 
+bookshelf.plugin(require('bookshelf-paranoia'));
+
 module.exports = bookshelf;
