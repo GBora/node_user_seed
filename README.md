@@ -9,16 +9,17 @@ A quickstart allowing your users to sign up for the site and be loged in.
 1. [Node.js](https://nodejs.org/en/)
 
 
-2. Sqlite3
+2. [Sqlite3](https://www.sqlite.org/)
 
 
-3. Bookshelf.js
+3. [Bookshelf.js](http://bookshelfjs.org/)
 
 
-4. Express
+4. [Express](http://bookshelfjs.org/)
 
 
-*These dependencies are all installable from npm and should work on Windows, Linux and Mac.*
+*These dependencies are all installable from npm and should work on Windows, Linux and Mac, and are 
+allready listed in the package.json.*
 
 
 
@@ -36,12 +37,21 @@ A quickstart allowing your users to sign up for the site and be loged in.
 
 ## Routes
 
-By default you will have acess to the following routes:
+By default the data is served via a REST API you will have acess to the following routes:
 
-| url | description |
-|-----|:-----------:|
-|http://localhost:3000/ | default route for server should show a static mesage|
-|http://localhost:3000/users/login|route for a user to login via POST call|
-|http://localhost:3000/new| add a new user via POST call|
-|http://localhost:3000/delete| remove a user from site via DELETE call |
-|http://localhost:3000/update| update a user (name, is admin etc) via a PUT call|
+| url                               | method | description                                          |
+|-----------------------------------|--------|------------------------------------------------------|
+| http://localhost:3000/            | GET    | default route for server should show a static mesage |
+| http://localhost:3000/users/login | POST   | route for a user to login                            |
+| http://localhost:3000/new         | POST   | add a new user                                       |
+| http://localhost:3000/delete      | DELETE | remove a user from site                              |
+| http://localhost:3000/update      | PUT    | update a user (name, is admin etc)                   |
+
+## Models
+
+There is only one model in the application, the user model, since this is a seed/quickstart the user is
+encouraged to change the model and add his own. 
+
+## TODO
+
+1. add error handling
