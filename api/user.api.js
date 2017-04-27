@@ -19,6 +19,10 @@ let login = function (req, res) {
             res.sendStatus(401);
         }
     })
+    .catch( function (err) {
+        console.log(err);
+        res.sendStatus(500);
+    })
 }
 
 let addNew = function (req, res) {
@@ -41,6 +45,10 @@ let addNew = function (req, res) {
                 res.sendStatus(200);
             })
         })
+        .catch( function (err) {
+            console.log(err);
+            res.sendStatus(500);
+        })
     }
 }
 
@@ -52,6 +60,10 @@ let deleteUser = function (req, res) {
     } else {
         USER.forge({ id: id }).destroy().then( function () {
             res.sendStatus(200);
+        })
+        .catch( function (err) {
+            console.log(err);
+            res.sendStatus(500);
         })
     }
 }
@@ -74,6 +86,10 @@ let updateUser = function (req, res) {
             id: id
         }).save().then(function () {
             res.sendStatus(200);
+        })
+        .catch( function (err) {
+            console.log(err);
+            res.sendStatus(500);
         })
     }
 }

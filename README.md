@@ -52,6 +52,12 @@ By default the data is served via a REST API you will have acess to the followin
 There is only one model in the application, the user model, since this is a seed/quickstart the user is
 encouraged to change the model and add his own. 
 
+
+## Database
+
+The database is found in in the db folder, I recommend using the [Firefox sqlite manager](https://addons.mozilla.org/ro/firefox/addon/sqlite-manager/)
+or the [Google Chrome SQLite Editor](https://chrome.google.com/webstore/detail/sqlite-editor-and-compile/gikfdibniklcibhonhhdbnfhkmapibid) or
+[SQLiteStudio](https://sqlitestudio.pl/index.rvt).
+
 ## TODO
 
-1. add error handling
